@@ -1,0 +1,856 @@
+/* *****************estructura***************** */
+*{box-sizing: border-box;}
+
+body, 
+.staticPage, 
+.text p, 
+h3, 
+.service{margin: 0;}
+
+html{scroll-behavior: smooth;}
+
+/* *****************display/position***************** */
+
+.staticPage,
+.center,
+.read,
+.read2,
+.nav-links,
+footer,
+.right, 
+.left, 
+.footPage, 
+.deck, 
+.blanco{
+    display: flex;
+    flex-direction: column;
+}
+
+.staticPage, 
+.centerend,
+.padre,
+.read,
+.read2,
+.read:hover,
+.read2:hover,
+.lateral,
+nav,
+.secondNav,
+.nav-links a,
+.foto,
+.cap,
+.circle,
+.footPage,
+.deck,
+.blanco, 
+.slogan, 
+.camp,
+.read3{
+    display: flex;
+    justify-content: center;
+}
+
+.staticPage,
+.read:hover,
+.read2:hover,
+nav,
+.secondNav,
+.nav-links a,
+.circle,
+footer,
+.footPage,
+.deck,
+.blanco, 
+header,
+.read3{
+    display: flex;
+    align-items: center;
+}
+
+.bigger, main, footer, .sidenav{
+    display: none;
+}
+
+.deck{
+    justify-items: space-between;
+}
+
+nav,
+.secondNav,
+.nav-links,
+.visiblepic{
+    position: fixed;
+}
+
+.staticPage,
+.centerend{
+    position: relative;
+}
+
+.read,
+.read2,
+.flecha,
+.arrowup, 
+.arrowup2{
+    position: absolute;
+}
+
+.read, .read2{
+    padding: 0 1rem;
+    bottom: 15%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    transition:all 2s ease;
+}
+
+.flecha{
+    bottom: 70%;
+}
+
+.arrowup, .arrowup2{
+    bottom: -70%;
+}
+
+nav, .secondNav{
+    top: 2px;
+    right: 2px;
+    align-self: flex-end;
+}
+
+.visiblepic{
+    top: 2px;
+    left: 1px;
+}
+
+    /* *****************landing elements***************** */
+
+    .staticPage{ 
+        height: 100vh; 
+    }
+
+    .cap{
+        margin: auto 0;
+        height: 60%;
+        align-items: flex-end;
+    }
+
+    .center, .centerend{
+        align-self: center;
+    }
+
+    .center{
+        height: 40%;
+    }
+
+    .centerend{
+        height: 100px;
+    }
+
+    .centerend, .read, .read2, .read3{
+        width: 100px;
+    }
+
+/* ********************general sizes********************* */
+.content, 
+.map iframe, 
+form,
+.slogan p,
+.gallery{
+    max-width: 1200px;
+}
+
+.map, 
+.right, 
+.right input, 
+textarea, 
+.footPage,
+.stiwy,
+.deck img,
+.blanco,
+h1,
+.foto{
+    width: 100%;
+}
+
+textarea{
+     height: 100%;         /*.blanco */
+}
+
+.read, .read:hover, .read2, .read2:hover, .visiblepic, .icon2, .read3{
+    height: 50px;
+}
+
+.read:hover, .read2:hover, .visiblepic, .icon2{
+    width: 50px;
+}
+
+.map iframe{
+    min-height: 400px;
+}
+
+.circle{
+    width: 150px;
+    height: 150px;
+}
+
+.deck img{
+    max-height: 500px;
+    max-width: 900px;
+}
+
+nav, .secondNav{
+    width: 40px;
+    height: 40px;
+}
+
+.gallery .card:nth-of-type(1) .picture,
+.gallery .card:nth-of-type(2) .picture,
+.gallery .card:nth-of-type(3) .picture{
+    height: 300px;
+}
+
+/* ********************general margin & padding********************* */
+
+h3{
+    padding:2rem 0 4rem 0;
+}
+
+h4, .right input:nth-of-type(1){
+    margin-top: 1rem;
+}
+
+.service, .blanco p{
+    padding: 2rem 0;
+}
+
+.firstbutton{
+    margin-top: 4rem;
+}
+
+main{
+    padding: 0;
+}
+
+aside, .lateral, .left p, .area{ 
+    /* position: fixed; 
+    bottom: 24%; */
+    margin: 2rem 0;
+}
+
+aside a, .lateral a{
+    padding: .25rem 1rem;
+}
+
+.last, .card:nth-of-type(3){
+    margin-bottom: 0;
+}
+
+.text, .foto{
+    padding: 3rem; 
+}
+
+.gallery{
+    margin: 0 auto;
+}
+
+.info{
+    padding: 1rem 2rem 2rem 2rem; 
+}
+
+header{
+    padding: 7rem 0;
+}
+
+footer p, .footPage p, .blanco{
+    padding: 0 3rem 3rem 3rem;
+    margin-top: 0;
+}
+
+.slogan{
+    padding:0 2rem 3rem 2rem;
+}
+
+.content, .map{
+    margin-bottom: 1rem;
+}
+
+form{
+    margin: 0 3rem;
+}
+
+form input{
+    margin: 1.6rem;
+}
+
+.right input{
+    margin-left: 0;
+}
+
+.right{
+    margin-left: 0.3rem;
+}
+
+.left p:nth-of-type(1){
+    margin-top: 1.3rem;
+}
+
+.padre .centerend{
+    margin: 1rem;
+}
+
+.last{
+    padding: 3.5rem 0;
+}
+
+.deck h1{
+    padding: 3rem 0;
+}
+
+    /* *****************menu circular***************** */
+
+    .nav-links{
+        height: 100vh;
+        width: 100%;
+        top: 0px;
+        right: 0px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links a{
+        height: 33.33%;
+    }
+
+    nav, .secondNav{
+        border-radius: 50%;
+        box-shadow: 1px 1px 10px #888888;
+        cursor: pointer;
+        z-index: 2; 
+        transition: all 1s ease-in-out; 
+    }
+
+    .secondNav, .read3{
+        opacity: .7;  
+    }
+
+    .secondNav:hover div i, 
+    nav div i, 
+    .secondNav div i,
+    .nav-links a p{
+        color:transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+
+    nav div i, 
+    .secondNav div i,
+    .nav-links{
+        transition: all 1s ease-in-out; 
+    }
+
+    .nav-links{
+        clip-path: circle(0px at 90% -10%);
+        -webkit-clip-path: circle(0px at 90% -10%);
+        list-style: none;
+        pointer-events: none;
+    }
+
+    .nav-links.open{
+        background-color: #fff;
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%); 
+        pointer-events: all;
+        z-index: 1;
+    }
+
+/* *****************color/apariencia***************** */
+
+h1,
+.staticPage{
+    color: #000;
+}
+
+footer p, 
+.read2:hover, 
+.read2,
+.read,
+.read:hover,
+.flecha, 
+.arrowup, 
+.arrowup2, 
+.footPage p, 
+.deck h1,
+.blanco p,
+.read3{
+    color: #fff;
+}
+
+/* aside a, .lateral a{
+    color: rgb(156, 156, 156);
+} */
+
+aside .visible .redlight, .lateral .redlight{
+    color: rgb(245, 96, 96);
+}
+
+aside .visible .darklight, .lateral .darklight{
+    color: #000;
+}
+
+aside .visible .bluelight, .lateral .bluelight{
+    color: #0e76a8;
+}
+
+h3, 
+main, 
+.principal,
+.card,
+.foto,
+.column{
+    background-color: rgba(240, 240, 240, 1);
+}
+
+nav,
+.secondNav{
+    background-color: #000;
+}
+
+.deck, 
+.deck h1,
+.blanco{
+    background-color: rgb(99, 94, 94);
+}
+
+nav:hover, 
+.secondNav:hover{
+    background-color: #fff;  
+
+}
+
+.staticPage{
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1)), url("../img/bola.jpg") no-repeat;
+}
+
+.service{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(240, 240, 240, 1));  
+}
+
+.read, 
+.read:hover,
+.read3,
+footer,
+.circle,
+.footPage{
+    background: linear-gradient(132deg, rgba(68, 157, 68, 0.8), rgba(154, 205, 50, 1));
+}
+
+.nav-links a p,
+.secondNav:hover div i, 
+nav div i, 
+.secondNav div i{
+    background-image: linear-gradient(132deg, rgba(68, 157, 68, 0.8), rgba(154, 205, 50, 1));
+}
+
+.read2:hover, .read2{
+    background: linear-gradient(to right, rgb(0, 123, 255), rgb(119, 153, 228));
+}
+
+.slogan{
+    background-image: linear-gradient(rgba(240, 240, 240, 1), rgba(255, 255, 255, .4)), url("../img/bluevec2.jpg");
+    background-repeat: no-repeat;
+}
+
+header{
+    background: linear-gradient(to bottom, rgba(255, 255, 255, .3), rgba(240, 240, 240, 1)), url("../img/greenvec2.jpg");
+    background-size: cover;
+}
+
+.circle{
+    border-radius: 50%;
+    transition: all 3s;
+}
+
+.visiblepic{
+    background: url("../img/posible-logo2.png"); 
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.staticPage,
+.visiblepic,
+.slogan{
+    background-position: center;
+    background-size: cover;
+}
+
+.read, 
+.read:hover, 
+.read2:hover, 
+.read2{
+    box-shadow: 1px 1px 5px #888888;
+    border-radius: 2em;
+}
+
+.read3{ border-radius: 2em; }
+
+.read h2, 
+.read2 h2,
+.read:hover h2, 
+.read2:hover h2{
+    transition: all 3s;
+}
+
+h2, 
+.flecha,
+.arrowup, 
+.arrowup2{
+    visibility: visible;
+}
+
+.read:hover h2, 
+.read2:hover h2,
+.flecha,
+.arrowup, 
+.arrowup2,
+aside a,
+nav,
+.invisible{
+    opacity: 0;
+}
+
+h2,
+.read,
+.read2,
+.read:hover,
+.read2:hover,
+.read h2,
+.read2 h2,
+.secondNav:hover,
+nav:hover,
+.nav-links a,
+.active:hover,
+.visible:hover,
+.lateral .redlight:hover, 
+.lateral .darklight:hover, 
+.lateral .bluelight:hover,
+.icon2:hover,
+.read3:hover{
+    opacity: 1;
+}
+
+.icon2{
+    opacity: .6;
+    background: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .1)), url("../img/posible-logo.png") no-repeat;
+    background-size: cover;
+}
+
+.visible, .visiblenav, .visiblepic{
+    opacity: .5;
+}
+
+.visible:hover, .visiblepic:hover{
+    cursor: pointer;
+} 
+
+.visiblepic:hover{
+    opacity: .8;
+} 
+
+.text{
+    border-radius: 0 0 2em 2em;
+}
+
+.column{
+    transition: all 1s ease-in-out;
+}
+
+.invisible, 
+.visible, 
+.visiblenav, 
+.visiblepic,
+.lateral .redlight, 
+.lateral .darklight, 
+.lateral .bluelight{
+    transition: all .5s ease-in;
+}
+
+.lateral .redlight,
+.lateral .darklight,
+.lateral .bluelight{
+    opacity: .5;
+}
+
+    /* *****************Gallery***************** */
+
+
+    .gallery .card:nth-of-type(1) .picture{
+        background: url("../img/angulat.jpg") no-repeat;
+    }
+
+    .gallery .card:nth-of-type(2) .picture{
+        background: url("../img/bootstrap2.jpg") no-repeat;
+    }
+
+    .gallery .card:nth-of-type(3) .picture{
+        background: url("../img/wordpress.jpg") no-repeat;
+    }
+
+    .gallery .card:nth-of-type(1) .picture,
+    .gallery .card:nth-of-type(2) .picture,
+    .gallery .card:nth-of-type(3) .picture{
+        background-size: contain;
+        background-position: center;
+        object-fit: center;
+    }
+
+/* *****************tiografia***************** */
+
+.map,
+header,
+.slogan p,
+.footPage p,
+.blanco p,
+.center,
+.foto,
+footer p,
+h1, h2, h3, h4,
+.nav-links a{
+    text-align: center;
+}
+
+.slogan, 
+form,
+textarea,
+form input,
+.footPage p, 
+.blanco p,
+.text,
+.info,
+footer p{
+    font-family: 'Muli', sans-serif;
+}
+
+h1, h3, h4,
+.slogan p,
+.nav-links a p{
+    font-family: 'Michroma', sans-serif;
+}
+
+form, 
+textarea, 
+form input,
+.footPage p,
+.blanco p,
+.text,
+.info,
+footer p{
+    font-size: 1.3rem;
+}
+
+h1, h2, h3, h4,
+.nav-links a p{
+    text-transform: uppercase; 
+}
+
+h1{ 
+    font-size: calc(2vw + 32px);
+}
+
+h2{
+    font-size: 1.2rem;
+    font-family: 'Cabin Condensed', sans-serif;
+    font-weight: 50;
+}
+
+h1, h3, .active:hover{ 
+    font-weight: bold;
+} 
+
+.read, .read2, .read3, .nav-links a{
+    text-decoration: none;
+}
+
+.nav-links a p, .slogan p, h3{
+    font-size: 2rem;
+}
+
+.text{
+    text-align: justify;
+}
+
+.info, .text{
+    line-height: 1.75rem;
+}
+
+/* ********************mq********************* */
+
+@media (min-width: 576px){
+    .nav-links.open{
+        width: 350px;
+        height: 350px;
+        border-radius: 0 0 0 30em;
+        box-shadow: 5px 5px 10px;
+        overflow: hidden;
+    }
+    .nav-links a p{
+        font-size: 1.5rem;
+    }
+    .nav-links a:first-child{
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 1rem;
+    }
+    .nav-links a:nth-child(3){
+        display: flex;
+        justify-content: flex-end;
+        /* padding-right: .5rem; */
+    }
+    .nav-links a:first-child, .nav-links a:nth-child(2){
+        border-bottom: 2px solid green;
+    }
+}
+@media (min-width: 768px){
+    .centerlast{
+        margin: 2rem 0;
+    }
+    .column, .card{
+        display: flex;
+    }
+    h3{
+        padding-bottom: 4rem;
+    }
+    .foto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+    .column .text{
+        width: 50%;
+        padding: 0 3rem;
+    }
+    .card{
+        flex-wrap: wrap;
+    }
+    .gallery{
+        display: flex;
+        flex-direction: column;
+    }
+    .gallery .picture{
+        width: 50%;
+    }
+    .gallery .text{
+        padding: 1.5rem 3rem;
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+    .card:nth-child(1) .picture, 
+    .card:nth-child(3) .picture, 
+    .column:nth-child(2) .foto{
+        order: 2;
+    }
+    .principal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    form{
+        margin: 0;
+    }
+}
+@media(min-width: 992px){
+    
+    main, .principal{
+        padding: 0 2rem;
+    }
+    .last{
+        padding: 3.5rem 0;
+    }
+    .content {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        margin: 0 auto;
+    }
+    .nav-links.open{
+        background-color: #fff;
+        clip-path: circle(2000px at 90% -10%);
+        -webkit-clip-path: circle(2000px at 90% -10%); 
+        pointer-events: all;
+        z-index: 1;
+    }
+    .column {
+        width: 100%;
+        margin: 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+        opacity: .8;
+        border-radius: 2em;
+        background-color: #fff;
+    }
+    .column:hover{
+        opacity: 1;
+        box-shadow: 5px 5px 10px #888888;
+    }
+    .column .text, .gallery .text{
+        padding: 1rem;
+        width: 100%;
+        background-color: #fff;
+    }
+    .column:nth-child(2) .foto{
+        order: 0;
+    }
+    .gallery .card:nth-of-type(1) .picture,
+    .gallery .card:nth-of-type(2) .picture,
+    .gallery .card:nth-of-type(3) .picture{
+        background-size: cover;
+    }
+    .foto{
+        background:linear-gradient(to right, rgba(68, 157, 68, 0.8), rgba(154, 205, 50, 1));
+        border-radius: 2em 2em 0 0;
+        width: 100%;
+    }
+    .circle{
+        background: none;
+    }
+    .gallery {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+    .gallery .text{
+        width: 100%;
+        background-color: #fff;
+    }
+    .gallery .picture{
+        width: 100%;
+        border-radius: 2em 2em 0 0;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        width: 100%;
+        border-radius: 2em;
+        background-color: #fff;
+        opacity: .8;
+        transition: all 1s ease;
+    }
+
+    .card:hover{
+        opacity: 1;
+        box-shadow: 5px 5px 10px #888888
+    }
+    .card:nth-child(1) .picture, .card:nth-child(3) .picture{
+        order: 0;
+    }
+    .card:nth-child(3) .text{
+        margin-bottom: 1rem;
+    }
+    form{
+        margin: 0;
+    }
+}
+
